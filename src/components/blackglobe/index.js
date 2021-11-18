@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ReactGlobe from "react-globe";
+import CustomGlobeImage1 from '../../assets/imageNew.jpg'
+
 
 const myProps = {
     markerColorInverted: "#000aff",
@@ -28,8 +30,8 @@ const testProps = {
         glowColor: "#999",
         glowPower: 4,
         glowRadiusScale: 0.15,
-        texture:
-            "https://i1.wp.com/blog.education.nationalgeographic.org/wp-content/uploads/2013/02/lightsnight-nasa-koreas.jpg?resize=470%2C282"
+        texture: CustomGlobeImage1
+        
     },
     lightOptions: {
         ambientLightColor: "#f3f3f3",
@@ -454,9 +456,9 @@ const Globe = (props) => {
                     pointLightPositionRadiusScales:
                         testProps.lightOptions.pointLightPositionRadiusScales
                 }}
-                globeCloudsTexture={null}
+                globeCloudsTexture={CustomGlobeImage1}
                 globeBackgroundTexture={null}
-                globeTexture={testProps.globeOptions.texture}
+                globeTexture={CustomGlobeImage1}
                 initialCoordinates={[0, -73.935242]} // USA
             />
             <style
